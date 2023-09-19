@@ -14,7 +14,7 @@ class Language{
     version; // object variable
     static type; // class variable
     constructor(v){
-        this.version=v;
+        this.version;
     }
     static printType(){
         console.log(Language.type);
@@ -31,4 +31,18 @@ Language.type = 'Programing';
 Language.printType();
 console.log(lang2.getInfo());
 
-//es05
+//es05 
+// functions 
+
+function LanguageFun(name,version){
+    this.name = name;
+    this.version = version
+}
+
+LanguageFun.prototype.getInfo = function(){
+    return `Language: ${this.name} - Version: ${this.version}`;
+}
+
+const lanffun = new LanguageFun('JS', 'ES7');
+console.log(lanffun.name);
+console.log(lanffun.getInfo());
