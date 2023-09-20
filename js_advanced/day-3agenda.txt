@@ -1,0 +1,22 @@
+
+
+1. Event Loop Architecture Recap
+2. Loop Queue's importance
+3. Call Backs
+5. Promises 
+6. Async Await keywords
+7. Nodejs Modules
+8. File Module 
+9. Http Module 
+10. Basic CRDU Operation
+
+
+communication -> 2 threads -> share some data 
+Sync Code Block stack [thread] ---   Async Code Block Stack [queue]
+1                                   5
+2                                   6
+3                                   7 
+                                    1. Fire and Forget settimeout 
+                                    2. share data 
+4
+8
