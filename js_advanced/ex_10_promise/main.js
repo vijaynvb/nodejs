@@ -50,4 +50,31 @@ function onError(){
 
 // chaning of tasks using multiple then methods 
 
-getWheather().then(getAttireInfo).then(data => console.log("clothing is " + data));
+// getWheather().then(getAttireInfo)
+//              .then(data => console.log("clothing is " + data));
+
+
+/*
+
+1. main program 
+2. async methods 
+    1. get weather
+    2. get attire 
+3. Achinve communication of your threads .then(data) and .catch(error)
+*/
+
+/*
+what all can be used for async communication 
+
+    1. call backs async
+    2. promises fs
+    3. async await 
+    4. events -> framework promises 
+        .on 
+        .emit
+
+*/
+
+const myPromise = Promise.resolve("Sunny");
+
+myPromise.then(data => console.log(data));
