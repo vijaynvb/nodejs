@@ -5,18 +5,44 @@
 3. Call Backs
 5. Promises 
 6. Async Await keywords
-7. Nodejs Modules
+7. Nodejs Modules - 
+    1. Comonjs Modules 
+    2. ES6 Modules 
+
+
+Day 4 -
+
 8. File Module 
 9. Http Module 
 10. Basic CRDU Operation
+11. Express.Js - framework for web server
+12. NoSQL - MongoDb 
+  
 
 
-communication -> 2 threads -> share some data 
-Sync Code Block stack [thread] ---   Async Code Block Stack [queue]
-1                                   5
-2                                   6
-3                                   7 
-                                    1. Fire and Forget settimeout 
-                                    2. share data 
-4
-8
+Node Js 
+    1. Node -  V8 engine 
+    2. NPM -
+        1. npm central repo -> git repo -> src 
+        2. local repo  
+        3. executing project 
+
+
+
+
+
+
+1. web 
+    1. web client http client - rest api consumtion
+    2. web server http server - rest api expose 
+
+2. express.js 
+
+3. mongodb nosql db -> persisting your data 
+    1. concepts 
+    2. implementation 
+
+4. containerization -> MS -> Dockers 
+
+k8s 
+    todo rest api + mongo db on k8s cluster 
