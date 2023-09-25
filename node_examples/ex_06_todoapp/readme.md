@@ -10,3 +10,18 @@ Todo Rest API -
         3. shardding theory 
     3. integrate mongodb for the application
     4. dokers
+
+
+client -> request -> express -> [validate object middleware] -> deligate the request to a route [post /todos]
+    {
+        title:"learn js",
+        description: "Learn ecmascript6"
+        isCompleted: 'y' 
+    }
+
+    dto -> 
+        {
+            title: string
+        }
+
+    boolean 
