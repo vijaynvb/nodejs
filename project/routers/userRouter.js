@@ -8,6 +8,7 @@ const { ADMIN } = require("../utils/constants");
 
 const router = Router();
 
+
 const signupSchema = z.object({
   body: z.object({
     firstName: z.string({
@@ -68,8 +69,12 @@ const updateUserSchema = z.object({
   }),
 });
 
-router.get("/", verifyToken(), getUsers);
-router.get("/:id", verifyToken(), validateRequest(uuidSchema), getUserById);
+router.get("/", 
+verifyToken(), 
+getUsers);
+router.get("/:id", 
+verifyToken(), 
+validateRequest(uuidSchema), getUserById);
 router.put(
   "/:id",
   verifyToken(ADMIN),
@@ -82,9 +87,11 @@ router.delete(
   validateRequest(uuidSchema),
   deleteUser
 );
+
+
 router.post(
   "/signup",
-  verifyToken(ADMIN),
+ // verifyToken(ADMIN),
   validateRequest(signupSchema),
   signup
 );
