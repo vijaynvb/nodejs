@@ -1,8 +1,8 @@
-const PI = 3.14159265359;
+export const PI = 3.14159265359;
 
 // Export a function
-function square(x) {
+export function square(x) {
   return x * x;
 }
 
-module.exports = {PI,square}
+// module.exports = {PI,square}
